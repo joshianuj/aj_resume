@@ -1,0 +1,44 @@
+@import '../../utils/variables.scss';
+
+.app-profile {
+  background-color: $colorBlack;
+  padding: $spaceNormal;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: $colorWhite;
+  flex: 1;
+
+  .image {
+    display: flex;
+    justify-content: center;
+
+    img {
+      border-radius: 50%;
+      height: 10rem;
+      width: auto;
+      border: 1px solid white;
+    }
+  }
+
+  >div {
+    a {
+      text-decoration: none;
+      color: $colorWhite;
+    }
+
+    ul {
+      list-style-type: none;
+      display: flex;
+      margin: 0;
+
+      li {
+        margin-left: 1rem;
+
+        &:first-child {
+          margin-left: 0rem;
+        }
+      }
+    }
+  }
+}

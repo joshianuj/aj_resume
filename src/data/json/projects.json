@@ -1,0 +1,19 @@
+[{
+  "name": "Easy international",
+  "company": "Candylabs",
+  "startDate": "2018",
+  "endDate": "",
+  "description": "Easy international is recruiting application. The application is built on Django, ReactJS and Graphql"
+}, {
+  "name": "Ontarget Cloud",
+  "company": "Leapfrog",
+  "startDate": "2016",
+  "endDate": "",
+  "description": "onTarget is a mobile and visual collaboration solution for the construction industry, which is plagued with cost and time overruns ($250B / year in US). A typical construction project uses 12+ discrete software applications (and paper), across 20+ teams."
+}, {
+  "name": "Synapse Pay",
+  "company": "Leapfrog",
+  "startDate": "25.12.2015",
+  "endDate": "20.10.2016",
+  "description": "SynapsePay is a payment gateway application. The web application is built on React Js and Redux architecture."
+}]
