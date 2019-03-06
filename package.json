@@ -20,7 +20,8 @@
     "react": "^16.8.3",
     "react-dom": "^16.8.3",
     "react-helmet": "^5.2.0",
-    "react-icons": "^3.4.0"
+    "react-icons": "^3.4.0",
+    "react-truncate": "^2.4.0"
   },
   "devDependencies": {
     "prettier": "^1.16.4"

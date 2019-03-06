@@ -1,6 +1,4 @@
-import { Link } from "gatsby"
-import PropTypes from "prop-types"
-import React from "react"
+import React, { useState } from "react"
 import {
   StaticQuery,
   graphql
@@ -8,19 +6,31 @@ import {
 
 import "./index.scss"
 import logo from './images/logo'
+import Truncate from 'react-truncate'
 
-const ProjectsRow = ({ data }) =>
-  <li key={data.id} id={data.id}>
-    <div className="logo">
-      {logo[data.name && data.name.replace(/\s/g, '').toLowerCase()]}
-    </div>
-    <div className="date">
-      {data.startDate}
-    </div>
-    <div className="description">
-      {data.description}
-    </div>
-  </li>
+const ProjectsRow = ({ data }) => {
+  const [lines, setLines] = useState(3);
+
+  return (
+    <li key={data.id} id={data.id}>
+      <div className="logo">
+        {logo[data.name && data.name.replace(/\s/g, '').toLowerCase()]}
+      </div>
+      <div className="title">
+        {data.name}
+      </div>
+      <div className="date">
+        {data.startDate}
+      </div>
+      <p className="description">
+        <Truncate lines={lines} onClick={() => setLines(-1)}>
+          {data.description}
+        </Truncate>
+      </p>
+    </li>
+  )
+}
+
 
 const Projects = ({ siteTitle, data }) => {
   return (

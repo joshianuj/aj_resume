@@ -20,6 +20,10 @@
       grid-column-gap: $spaceNormal;
       margin: 0;
 
+      @media screen and (max-width: 30rem) {
+        grid-template-columns: 1fr;
+      }
+
       li {
         .logo {
           min-height: 7rem;
@@ -46,6 +50,7 @@
 
         .description {
           color: $colorGray;
+          cursor: pointer;
         }
 
       }

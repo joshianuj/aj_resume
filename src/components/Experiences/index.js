@@ -1,6 +1,6 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
-import React from "react"
+import React, { useState } from "react"
 import {
   StaticQuery,
   graphql
@@ -8,25 +8,34 @@ import {
 
 import "./index.scss"
 import logo from './logo'
+import Truncate from 'react-truncate';
 
-const ExperiencesRow = ({ data }) =>
-  <li key={data.id} id={data.id}>
-    <div className="logo">
-      {logo[data.company]}
-    </div>
-    <div className="title">
-      {data.name}
-    </div>
-    <div className="date">
-      {data.startDate} - {data.endDate}
-    </div>
-    <div className="description">
-      {data.description}
-    </div>
-  </li>
+const ExperiencesRow = ({ data }) => {
+  const [lines, setLines] = useState(2);
+  return (
+    <li key={data.id} id={data.id}>
+      <div className="logo">
+        {logo[data.company]}
+      </div>
+      <div className="title">
+        {data.name}
+      </div>
+      <div className="date">
+        {data.startDate} - {data.endDate}
+      </div>
+      <p className="description">
+        <Truncate lines={lines} onClick={() => setLines(-1)}>
+          {data.description}
+        </Truncate>
+      </p>
+
+    </li>
+  )
+}
+
+
 
 const Experiences = ({ siteTitle, data }) => {
-  console.log(data)
   return (
     <div
       className="app-experiences"

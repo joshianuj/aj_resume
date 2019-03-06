@@ -1,35 +1,90 @@
 @import '../../utils/variables.scss';
 
 .app-profile {
-  background-color: $colorBlack;
+  background-color: $colorTheme;
   padding: $spaceNormal;
   display: flex;
   align-items: center;
   flex-direction: column;
   color: $colorWhite;
-  flex: 1;
+  box-shadow: $shadowStrong;
+  min-height: 100vh;
 
-  .image {
-    display: flex;
-    justify-content: center;
+  .about {
+    flex: 1;
 
-    img {
-      border-radius: 50%;
-      height: 10rem;
-      width: auto;
-      border: 1px solid white;
+    .image {
+      margin-top: $spaceNormal;
+      display: flex;
+      justify-content: center;
+
+      img {
+        border-radius: 50%;
+        height: 10rem;
+        width: auto;
+        border: 1px solid white;
+      }
+    }
+
+    .bio {
+      text-align: center;
+
+      .title {
+        font-size: $font32;
+        margin-bottom: $spaceNormal;
+      }
+
+      .role {
+        color: $colorGray;
+        font-size: $font24;
+      }
+
+      .description {
+        margin-top: $spaceNormal;
+      }
+
+      .contact {
+        color: $colorGray;
+        margin-top: $spaceNormal;
+
+        ul {
+          display: flex;
+          list-style-type: none;
+          flex-direction: column;
+
+          li {
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+
+        }
+      }
     }
   }
 
-  >div {
-    a {
-      text-decoration: none;
-      color: $colorWhite;
+  .footer {
+    width: 100%;
+  }
+
+  .links {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    &::before {
+      display: inline-block;
+      content: "";
+      border-top: 2px solid $colorGray;
+      width: 100%;
+      transform: translateY(-1rem);
     }
 
     ul {
-      list-style-type: none;
       display: flex;
+      list-style-type: none;
       margin: 0;
 
       li {
@@ -40,5 +95,16 @@
         }
       }
     }
+
+
+  }
+
+  >div {
+    a {
+      text-decoration: none;
+      color: $colorWhite;
+    }
+
+
   }
 }

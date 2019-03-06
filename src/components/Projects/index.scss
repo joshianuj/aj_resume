@@ -20,9 +20,13 @@
       grid-column-gap: $spaceNormal;
       margin: 0;
 
+      @media screen and (max-width: 30rem) {
+        grid-template-columns: 1fr;
+      }
+
       li {
         .logo {
-          min-height: 12rem;
+          min-height: 10rem;
           display: flex;
           align-items: center;
           justify-content: center;
@@ -32,6 +36,10 @@
           box-shadow: $shadowStrong;
           transition: 0.5s all;
           cursor: pointer;
+
+          img {
+            max-height: 7rem;
+          }
 
           &:hover {
             box-shadow: $shadowLarge;
@@ -46,6 +54,7 @@
 
         .description {
           color: $colorGray;
+          cursor: pointer;
         }
 
       }

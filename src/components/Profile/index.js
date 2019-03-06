@@ -9,7 +9,7 @@ import {
 import "./index.scss"
 import profile from '../../data/images/profile.jpg'
 
-import { FaGithub, FaLinkedin, FaEnvelope, FaXing } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaEnvelope, FaXing, FaPhone, FaAddressBook } from 'react-icons/fa';
 
 
 const Profile = ({ siteTitle, data }) => {
@@ -22,32 +22,45 @@ const Profile = ({ siteTitle, data }) => {
           <img src={profile} alt="anuj_profile" />
         </div>
         <div className="bio">
-          Hi, its me Anuj <br />A Full Stack Developer
+          <div class="title">Anuj joshi</div>
+          <span class="role">Full Stack Developer</span>
+          <div class="description">
+            Hardworking, self-confident individual seeking an opportunity to prove my skills and leadership qualities while contributing to the organizational growth.
+          </div>
+          <div class="contact">
+            <ul>
+              <li>joshi.anujo7@gmail.com</li>
+              <li><FaPhone /> +4917645782221</li>
+              <li><FaAddressBook /> Bockenheimer Landstraße 135 <br />60325, Frankfurt am Main<br />Germany</li>
+            </ul>
+          </div>
         </div>
       </div>
-      <div className="links">
-        <ul className="icons-list">
-          <li className="icon">
-            <a href="https://www.github.com/joshianuj" target="_blank">
-              <FaGithub />
-            </a>
-          </li>
-          <li className="icon">
-            <a href="https://www.linkedin.com/in/joshianujo7" target="_blank">
-              <FaLinkedin />
-            </a>
-          </li>
-          <li className="icon">
-            <a href="https://www.xing.com/in/joshianujo7" target="_blank">
-              <FaXing />
-            </a>
-          </li>
-          <li className="icon">
-            <a href="mailto:joshi.anujo7@gmail.com" target="_blank">
-              <FaEnvelope />
-            </a>
-          </li>
-        </ul>
+      <div className="footer">
+        <div className="links">
+          <ul className="icons-list">
+            <li className="icon">
+              <a href="https://www.github.com/joshianuj" target="_blank">
+                <FaGithub />
+              </a>
+            </li>
+            <li className="icon">
+              <a href="https://www.linkedin.com/in/joshianujo7" target="_blank">
+                <FaLinkedin />
+              </a>
+            </li>
+            <li className="icon">
+              <a href="https://www.xing.com/in/joshianujo7" target="_blank">
+                <FaXing />
+              </a>
+            </li>
+            <li className="icon">
+              <a href="mailto:joshi.anujo7@gmail.com" target="_blank">
+                <FaEnvelope />
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   )

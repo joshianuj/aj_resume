@@ -1,4 +1,23 @@
 .app-index {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 35vw 2fr;
+
+  .sidebar {
+    position: fixed;
+    width: 35vw;
+  }
+
+  .main {
+    grid-column-start: 2;
+  }
+
+  @media screen and (max-width: 60rem) {
+    display: flex;
+    flex-direction: column;
+
+    .sidebar {
+      position: relative;
+      width: auto;
+    }
+  }
 }
