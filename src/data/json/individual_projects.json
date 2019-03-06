@@ -2,12 +2,16 @@
   "name": "Data Analytics of Irregular Sensor data",
   "iconName": "data science",
   "company": "Frankfurt University of Applied Sciences",
+  "website": "https://github.com/joshianuj/automation-lab",
+
   "startDate": "2017",
   "endDate": "2018",
   "description": "Application of a decision tree classifier data in frequency domain, extracting features from data to classify and predict the data-set"
 }, {
   "name": "Convolution Neural Network Analysis",
   "company": "Frankfurt University of Applied Sciences",
+  "website": "#",
+
   "iconName": "machine learning",
   "startDate": "2017",
   "endDate": "2018",

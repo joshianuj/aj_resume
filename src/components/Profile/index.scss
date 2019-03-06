@@ -87,12 +87,8 @@
       list-style-type: none;
       margin: 0;
 
-      li {
+      li:not(:first-child) {
         margin-left: 1rem;
-
-        &:first-child {
-          margin-left: 0rem;
-        }
       }
     }
 

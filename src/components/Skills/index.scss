@@ -1,0 +1,27 @@
+@import '../../utils/variables.scss';
+
+.app-skills {
+  background-color: $colorWhite;
+  padding: $spaceNormal;
+
+  >div {
+    max-width: $contentWidthMin;
+    margin: 0 auto;
+
+    a {
+      text-decoration: none;
+      color: $colorWhite;
+    }
+
+    ul {
+      list-style-type: none;
+      display: flex;
+      flex-direction: column;
+      margin: 0;
+
+      li {
+        margin: 0;
+      }
+    }
+  }
+}

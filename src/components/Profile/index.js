@@ -1,4 +1,3 @@
-import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 import {
@@ -40,22 +39,22 @@ const Profile = ({ siteTitle, data }) => {
         <div className="links">
           <ul className="icons-list">
             <li className="icon">
-              <a href="https://www.github.com/joshianuj" target="_blank">
+              <a href="https://www.github.com/joshianuj" target="_blank" rel="noopener noreferrer">
                 <FaGithub />
               </a>
             </li>
             <li className="icon">
-              <a href="https://www.linkedin.com/in/joshianujo7" target="_blank">
+              <a href="https://www.linkedin.com/in/joshianujo7" target="_blank" rel="noopener noreferrer">
                 <FaLinkedin />
               </a>
             </li>
             <li className="icon">
-              <a href="https://www.xing.com/profile/AnujJoshi2/cv" target="_blank">
+              <a href="https://www.xing.com/profile/AnujJoshi2/cv" target="_blank" rel="noopener noreferrer">
                 <FaXing />
               </a>
             </li>
             <li className="icon">
-              <a href="mailto:joshi.anujo7@gmail.com" target="_blank">
+              <a href="mailto:joshi.anujo7@gmail.com" target="_blank" rel="noopener noreferrer">
                 <FaEnvelope />
               </a>
             </li>

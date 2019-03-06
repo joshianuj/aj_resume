@@ -5,12 +5,9 @@ import SEO from "../components/seo"
 import Experiences from '../components/Experiences'
 import Projects from '../components/Projects'
 import Profile from '../components/Profile'
+import Skills from '../components/Skills'
 
-import _ from 'lodash'
 import "./index.scss"
-
-
-
 
 const IndexPage = () => (
   <Layout>
@@ -21,6 +18,7 @@ const IndexPage = () => (
       </div>
       <div className="main">
         <Experiences />
+        <Skills />
         <Projects title="Projects" />
         <Projects title="Individual Projects" />
       </div>

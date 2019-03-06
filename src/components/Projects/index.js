@@ -13,9 +13,11 @@ const ProjectsRow = ({ data }) => {
 
   return (
     <li key={data.id} id={data.id}>
-      <div className="logo">
-        {logo[data.iconName && data.iconName.replace(/\s/g, '').toLowerCase()]}
-      </div>
+      <a href={data.website} target='_blank' rel="noopener noreferrer">
+        <div className="logo">
+          {logo[data.iconName && data.iconName.replace(/\s/g, '').toLowerCase()]}
+        </div>
+      </a>
       <div className="title">
         {data.name}
       </div>
@@ -41,7 +43,7 @@ const Projects = ({ data, title }) => {
         <h2>{title}</h2>
         <ul>
           {data && data.map((d) =>
-            <ProjectsRow data={d.node} />
+            <ProjectsRow key={d.node.id} data={d.node} />
           )}
         </ul>
       </div>
@@ -56,6 +58,7 @@ query {
       node {
         id
         name
+        website
         iconName
         endDate
         startDate
@@ -69,6 +72,7 @@ query {
       node {
         id
         name
+        website
         iconName
         endDate
         startDate
@@ -82,13 +86,10 @@ query {
 
 
 export default ({ title }) => {
-  return title == 'Projects' ? <StaticQuery
-    query={query}
-    render={data => < Projects title={title} data={data.allProjectsJson.edges} />}
-  />
-    : <StaticQuery
+  return (
+    <StaticQuery
       query={query}
-      render={data => < Projects title={title} data={data.allIndividualProjectsJson.edges} />}
-    />
+      render={data => <Projects title={title} data={title === 'Projects' ? data.allProjectsJson.edges : data.allIndividualProjectsJson.edges} />}
+    />)
 }
 

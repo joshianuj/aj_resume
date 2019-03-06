@@ -1,5 +1,3 @@
-import { Link } from "gatsby"
-import PropTypes from "prop-types"
 import React, { useState } from "react"
 import {
   StaticQuery,
@@ -14,9 +12,11 @@ const ExperiencesRow = ({ data }) => {
   const [lines, setLines] = useState(2);
   return (
     <li key={data.id} id={data.id}>
-      <div className="logo">
-        {logo[data.company]}
-      </div>
+      <a href={data.website} target='_blank' rel="noopener noreferrer">
+        <div className="logo">
+          {logo[data.company]}
+        </div>
+      </a>
       <div className="title">
         {data.name}
       </div>
@@ -44,7 +44,7 @@ const Experiences = ({ siteTitle, data }) => {
         <h2>Experiences</h2>
         <ul>
           {data && data.allExperiencesJson.edges && data.allExperiencesJson.edges.map((d) =>
-            <ExperiencesRow data={d.node} />
+            <ExperiencesRow key={d.node.id} data={d.node} />
           )}
         </ul>
       </div>
@@ -61,6 +61,7 @@ export default props => (
             node {
               id
               name
+              website
               endDate
               startDate
               company
