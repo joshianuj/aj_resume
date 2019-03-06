@@ -12,6 +12,7 @@ import { FaGithub, FaLinkedin, FaEnvelope, FaXing, FaPhone, FaAddressBook } from
 
 
 const Profile = ({ siteTitle, data }) => {
+  let file = data.allFile.edges[0].node
   return (
     <div
       className="app-profile"
@@ -20,17 +21,21 @@ const Profile = ({ siteTitle, data }) => {
         <div className="image">
           <img src={profile} alt="anuj_profile" />
         </div>
+
         <div className="bio">
-          <div className="title">Anuj joshi</div>
+          <div className="title">Anuj joshi </div>
           <span className="role">Full Stack Developer</span>
+
           <div className="description">
             Hardworking, self-confident individual seeking an opportunity to prove my skills and leadership qualities while contributing to the organizational growth.
           </div>
           <div className="contact">
             <ul>
-              <li>joshi.anujo7@gmail.com</li>
               <li><FaPhone /> +4917645782221</li>
               <li><FaAddressBook /> Bockenheimer Landstraße 135 <br />60325, Frankfurt am Main<br />Germany</li>
+              <li><a href={file.publicURL} download="resume_anuj_joshi">
+                Download Resume
+              </a></li>
             </ul>
           </div>
         </div>
@@ -72,20 +77,27 @@ Profile.propTypes = {
 Profile.defaultProps = {
   siteTitle: ``,
 }
-
-export default props => (
-  <StaticQuery
-    query={graphql`
-    query {
-      placeholderImage: file(relativePath: { eq: "images/profile.jpg" }) {
-        childImageSharp {
-          fluid(maxWidth: 100) {
-            ...GatsbyImageSharpFluid
-          }
-        }
+const query = graphql`
+query {
+  placeholderImage: file(relativePath: { eq: "images/profile.jpg" }) {
+    childImageSharp {
+      fluid(maxWidth: 100) {
+        ...GatsbyImageSharpFluid
       }
     }
-  `}
+  }
+  allFile(filter: { extension: { eq: "pdf" } }) {
+    edges {
+      node {
+        publicURL
+      }
+    }
+  }
+}
+`
+export default props => (
+  <StaticQuery
+    query={query}
     render={data => <Profile data={data} {...props} />}
   />
 )

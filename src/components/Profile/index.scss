@@ -57,6 +57,19 @@
             display: flex;
             align-items: center;
             justify-content: center;
+
+            a {
+              text-decoration: none;
+              color: $colorGray;
+
+              &:after {
+                display: inline-block;
+                content: "";
+                border-bottom: 2px solid $colorGray;
+                width: 100%;
+                transform: translateY(-1rem);
+              }
+            }
           }
 
         }
