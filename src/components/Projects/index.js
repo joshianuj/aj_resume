@@ -49,5 +49,46 @@ const Projects = ({ data, title }) => {
   )
 }
 
-export default Projects
+const query = graphql`
+query {
+  allProjectsJson {
+    edges {
+      node {
+        id
+        name
+        iconName
+        endDate
+        startDate
+        company
+        description
+      }
+    }
+  }
+  allIndividualProjectsJson {
+    edges {
+      node {
+        id
+        name
+        iconName
+        endDate
+        startDate
+        company
+        description
+      }
+    }
+  }
+}
+`
+
+
+export default ({ title }) => {
+  return title == 'Projects' ? <StaticQuery
+    query={query}
+    render={data => < Projects title={title} data={data.allProjectsJson.edges} />}
+  />
+    : <StaticQuery
+      query={query}
+      render={data => < Projects title={title} data={data.allIndividualProjectsJson.edges} />}
+    />
+}
 
