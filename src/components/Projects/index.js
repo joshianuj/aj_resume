@@ -14,7 +14,7 @@ const ProjectsRow = ({ data }) => {
   return (
     <li key={data.id} id={data.id}>
       <div className="logo">
-        {logo[data.name && data.name.replace(/\s/g, '').toLowerCase()]}
+        {logo[data.iconName && data.iconName.replace(/\s/g, '').toLowerCase()]}
       </div>
       <div className="title">
         {data.name}
@@ -32,15 +32,15 @@ const ProjectsRow = ({ data }) => {
 }
 
 
-const Projects = ({ siteTitle, data }) => {
+const Projects = ({ data, title }) => {
   return (
     <div
       className="app-projects"
     >
       <div>
-        <h2>Projects</h2>
+        <h2>{title}</h2>
         <ul>
-          {data && data.allProjectsJson.edges && data.allProjectsJson.edges.map((d) =>
+          {data && data.map((d) =>
             <ProjectsRow data={d.node} />
           )}
         </ul>
@@ -49,25 +49,5 @@ const Projects = ({ siteTitle, data }) => {
   )
 }
 
-export default props => (
-  <StaticQuery
-    query={graphql`
-      query {
-        allProjectsJson {
-          edges {
-            node {
-              id
-              name
-              endDate
-              startDate
-              company
-              description
-            }
-          }
-        }
-      }
-    `}
-    render={data => <Projects data={data} {...props} />}
-  />
-)
+export default Projects
 

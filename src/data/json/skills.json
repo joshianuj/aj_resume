@@ -1,0 +1,19 @@
+[{
+  "name": "Javascript",
+  "rating": 9
+}, {
+  "name": "Ruby on Rails",
+  "rating": 8
+}, {
+  "name": "Python",
+  "rating": 7
+}, {
+  "name": "DBMS",
+  "rating": 7
+}, {
+  "name": "Amazon Web Services",
+  "rating": 6
+}, {
+  "name": "Java",
+  "rating": 6
+}]

@@ -22,12 +22,12 @@ const Profile = ({ siteTitle, data }) => {
           <img src={profile} alt="anuj_profile" />
         </div>
         <div className="bio">
-          <div class="title">Anuj joshi</div>
-          <span class="role">Full Stack Developer</span>
-          <div class="description">
+          <div className="title">Anuj joshi</div>
+          <span className="role">Full Stack Developer</span>
+          <div className="description">
             Hardworking, self-confident individual seeking an opportunity to prove my skills and leadership qualities while contributing to the organizational growth.
           </div>
-          <div class="contact">
+          <div className="contact">
             <ul>
               <li>joshi.anujo7@gmail.com</li>
               <li><FaPhone /> +4917645782221</li>
@@ -50,7 +50,7 @@ const Profile = ({ siteTitle, data }) => {
               </a>
             </li>
             <li className="icon">
-              <a href="https://www.xing.com/in/joshianujo7" target="_blank">
+              <a href="https://www.xing.com/profile/AnujJoshi2/cv" target="_blank">
                 <FaXing />
               </a>
             </li>

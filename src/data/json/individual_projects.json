@@ -1,0 +1,15 @@
+[{
+  "name": "Data Analytics of Irregular Sensor data",
+  "iconName": "data science",
+  "company": "Frankfurt University of Applied Sciences",
+  "startDate": "2017",
+  "endDate": "2018",
+  "description": "Application of a decision tree classifier data in frequency domain, extracting features from data to classify and predict the data-set"
+}, {
+  "name": "Convolution Neural Network Analysis",
+  "company": "Frankfurt University of Applied Sciences",
+  "iconName": "machine learning",
+  "startDate": "2017",
+  "endDate": "2018",
+  "description": "Using Pyqt for camera interface and count the number of fingers displayed using CNN with help of tensor flow"
+}]
