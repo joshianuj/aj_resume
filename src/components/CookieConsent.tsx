@@ -1,9 +1,11 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Cookie, X, ExternalLink } from 'lucide-react';
+import { PrivacyPolicyModal } from './PrivacyPolicyModal';
 
 export const CookieConsent = () => {
     const [isVisible, setIsVisible] = useState(false);
+    const [isPrivacyModalOpen, setIsPrivacyModalOpen] = useState(false);
 
     useEffect(() => {
         const consent = localStorage.getItem('cookie-consent');
@@ -81,16 +83,23 @@ export const CookieConsent = () => {
                                 </div>
 
                                 <div className="mt-4 pt-4 border-t border-gray-50 flex items-center justify-between">
-                                    <a href="#" className="text-[11px] text-gray-400 hover:text-blue-600 flex items-center gap-1 transition-colors uppercase font-bold tracking-tight">
+                                    <button
+                                        onClick={() => setIsPrivacyModalOpen(true)}
+                                        className="text-[11px] text-gray-400 hover:text-blue-600 flex items-center gap-1 transition-colors uppercase font-bold tracking-tight cursor-pointer"
+                                    >
                                         Privacy Policy
                                         <ExternalLink size={10} />
-                                    </a>
+                                    </button>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </motion.div>
             )}
+            <PrivacyPolicyModal
+                isOpen={isPrivacyModalOpen}
+                onClose={() => setIsPrivacyModalOpen(false)}
+            />
         </AnimatePresence>
     );
 };
