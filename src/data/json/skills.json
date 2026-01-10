@@ -6,14 +6,11 @@
   "rating": 8
 }, {
   "name": "Python",
-  "rating": 7
+  "rating": 8
 }, {
   "name": "DBMS",
-  "rating": 7
-}, {
-  "name": "Amazon Web Services",
-  "rating": 6
+  "rating": 8
 }, {
   "name": "Java",
-  "rating": 6
+  "rating": 7
 }]

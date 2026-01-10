@@ -31,8 +31,6 @@ const Profile = ({ siteTitle, data }) => {
           </div>
           <div className="contact">
             <ul>
-              <li><FaPhone /> +4917645782221</li>
-              <li><FaAddressBook /> Bockenheimer Landstraße 135 <br />60325, Frankfurt am Main<br />Germany</li>
               <li><a href={file.publicURL} download="resume_anuj_joshi">
                 Download Resume
               </a></li>
