@@ -48,7 +48,7 @@ export const Profile = ({ profile }: { profile: ProfileData }) => {
 
                 {/* Name & Title */}
                 <div className="text-center w-full">
-                    <h1 className="text-2xl font-bold tracking-tight mb-1">{profile.name}</h1>
+                    <h1 className="text-2xl font-bold text-white tracking-tight mb-1">{profile.name}</h1>
                     <p className="text-white/50 text-sm font-sans uppercase tracking-[0.2em]">{profile.title}</p>
                 </div>
             </div>
