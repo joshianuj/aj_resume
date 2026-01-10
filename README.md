@@ -1,97 +1,66 @@
-<!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
-<p align="center">
-  <a href="https://www.gatsbyjs.org">
-    <img alt="Gatsby" src="https://www.gatsbyjs.org/monogram.svg" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  Gatsby's default starter
-</h1>
+# Modern Minimalist Resume
 
-Kick off your project with this default boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
+A highly polished, data-driven personal resume website built with **React**, **Vite**, and **Tailwind CSS**. Designed with a focus on premium aesthetics, clean typography, and smooth interactive experiences.
 
-_Have another more specific idea? You may want to check out our vibrant collection of [official and community-created starters](https://www.gatsbyjs.org/docs/gatsby-starters/)._
+## 🚀 Features
 
-## 🚀 Quick start
+-   **Premium Minimalist Design**: Inspired by high-end designer portfolios, featuring an editorial-style font pairing (Georgia Serif & Sans-serif) and a sophisticated earthy-toned sidebar.
+-   **Data-Driven**: All resume content is externalized in `src/data/resume.json` for easy updates without touching the code.
+-   **Smooth Animations**: Staggered scroll reveal effects and subtle micro-interactions using **Framer Motion**.
+-   **Company Logos**: High-quality SVG logos for professional experience entries.
+-   **Mobile Responsive**: Fully optimized for all screen sizes with a clean mobile drawer menu.
+-   **University Projects**: Dedicated section for academic work with a distinct grid layout.
 
-1.  **Create a Gatsby site.**
+## 🛠️ Tech Stack
 
-    Use the Gatsby CLI to create a new site, specifying the default starter.
+-   **Frontend**: React 18
+-   **Styling**: Tailwind CSS (v4)
+-   **Animations**: Framer Motion
+-   **Icons**: Lucide React
+-   **Build Tool**: Vite
 
-    ```sh
-    # create a new Gatsby site using the default starter
-    gatsby new my-default-starter https://github.com/gatsbyjs/gatsby-starter-default
+## 📦 Project Structure
+
+```text
+personal_resume/
+├── public/                # Static assets (logos, profile photo, favicon)
+├── src/
+│   ├── components/        # Reusable UI components
+│   ├── data/              # resume.json (Data source)
+│   ├── App.tsx            # Main application layout
+│   └── index.css          # Global styles & design tokens
+```
+
+## ⚙️ Getting Started
+
+1.  **Clone & Install**:
+    ```bash
+    git clone [repository-url]
+    cd personal_resume
+    npm install
     ```
 
-1.  **Start developing.**
-
-    Navigate into your new site’s directory and start it up.
-
-    ```sh
-    cd my-default-starter/
-    gatsby develop
+2.  **Development**:
+    ```bash
+    npm run dev
     ```
 
-1.  **Open the source code and start editing!**
+3.  **Update Content**:
+    Simply edit `src/data/resume.json` to update your experience, projects, skills, and profile info.
 
-    Your site is now running at `http://localhost:8000`!
+4.  **Deployment**:
+    ```bash
+    npm run build
+    ```
 
-    _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.org/tutorial/part-five/#introducing-graphiql)._
+## 🎨 Design Tokens
 
-    Open the `my-default-starter` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
+-   **Primary Sidebar**: `#5F4848` (Earthy Brown)
+-   **Accent Blue**: `#1E88E5`
+-   **Typography**:
+    -   Headings: System Sans-serif (Bold)
+    -   Body/Summary: Georgia (Serif)
 
-## 🧐 What's inside?
+---
 
-A quick look at the top-level files and directories you'll see in a Gatsby project.
-
-    .
-    ├── node_modules
-    ├── src
-    ├── .gitignore
-    ├── .prettierrc
-    ├── gatsby-browser.js
-    ├── gatsby-config.js
-    ├── gatsby-node.js
-    ├── gatsby-ssr.js
-    ├── LICENSE
-    ├── package-lock.json
-    ├── package.json
-    └── README.md
-
-1.  **`/node_modules`**: This directory contains all of the modules of code that your project depends on (npm packages) are automatically installed.
-
-2.  **`/src`**: This directory will contain all of the code related to what you will see on the front-end of your site (what you see in the browser) such as your site header or a page template. `src` is a convention for “source code”.
-
-3.  **`.gitignore`**: This file tells git which files it should not track / not maintain a version history for.
-
-4.  **`.prettierrc`**: This is a configuration file for [Prettier](https://prettier.io/). Prettier is a tool to help keep the formatting of your code consistent.
-
-5.  **`gatsby-browser.js`**: This file is where Gatsby expects to find any usage of the [Gatsby browser APIs](https://www.gatsbyjs.org/docs/browser-apis/) (if any). These allow customization/extension of default Gatsby settings affecting the browser.
-
-6.  **`gatsby-config.js`**: This is the main configuration file for a Gatsby site. This is where you can specify information about your site (metadata) like the site title and description, which Gatsby plugins you’d like to include, etc. (Check out the [config docs](https://www.gatsbyjs.org/docs/gatsby-config/) for more detail).
-
-7.  **`gatsby-node.js`**: This file is where Gatsby expects to find any usage of the [Gatsby Node APIs](https://www.gatsbyjs.org/docs/node-apis/) (if any). These allow customization/extension of default Gatsby settings affecting pieces of the site build process.
-
-8.  **`gatsby-ssr.js`**: This file is where Gatsby expects to find any usage of the [Gatsby server-side rendering APIs](https://www.gatsbyjs.org/docs/ssr-apis/) (if any). These allow customization of default Gatsby settings affecting server-side rendering.
-
-9.  **`LICENSE`**: Gatsby is licensed under the MIT license.
-
-10. **`package-lock.json`** (See `package.json` below, first). This is an automatically generated file based on the exact versions of your npm dependencies that were installed for your project. **(You won’t change this file directly).**
-
-11. **`package.json`**: A manifest file for Node.js projects, which includes things like metadata (the project’s name, author, etc). This manifest is how npm knows which packages to install for your project.
-
-12. **`README.md`**: A text file containing useful reference information about your project.
-
-## 🎓 Learning Gatsby
-
-Looking for more guidance? Full documentation for Gatsby lives [on the website](https://www.gatsbyjs.org/). Here are some places to start:
-
-- **For most developers, we recommend starting with our [in-depth tutorial for creating a site with Gatsby](https://www.gatsbyjs.org/tutorial/).** It starts with zero assumptions about your level of ability and walks through every step of the process.
-
-- **To dive straight into code samples, head [to our documentation](https://www.gatsbyjs.org/docs/).** In particular, check out the _Guides_, _API Reference_, and _Advanced Tutorials_ sections in the sidebar.
-
-## 💫 Deploy
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-default)
-
-<!-- AUTO-GENERATED-CONTENT:END -->
+Developed with ❤️ using Antigravity.

@@ -1,0 +1,288 @@
+{
+    "profile": {
+        "name": "Anuj Joshi",
+        "title": "Full Stack Developer",
+        "summary": "Passionate developer with 5+ years of experience building scalable web applications. Focused on creating beautiful, user-centric experiences.",
+        "image": "/logos/profile.jpg",
+        "contact": {
+            "phone": "+1 (555) 123-4567",
+            "email": "anuj@example.com",
+            "location": "San Francisco, CA"
+        },
+        "socials": [
+            {
+                "platform": "Github",
+                "url": "https://github.com/joshianuj"
+            },
+            {
+                "platform": "Linkedin",
+                "url": "https://www.linkedin.com/in/joshianujo7"
+            },
+            {
+                "platform": "Email",
+                "url": "mailto:joshi.anujo7@gmail.com"
+            }
+        ]
+    },
+    "experience": [
+        {
+            "company": "Deutsche Bank",
+            "logo": "/logos/db.svg",
+            "role": "Software Engineer",
+            "period": "2020 — Present",
+            "description": [
+                "Designed, developed, and maintained enterprise-scale frontend applications using React and modern JavaScript standards.",
+                "Led and contributed to cloud modernization initiatives, including Google Kubernetes Engine (GKE) infrastructure creation and OpenShift (OCP 4) migration.",
+                "Established and maintained CI/CD standards using GitHub Actions, enabling one-touch and scheduled workflows across approximately 40 microservices.",
+                "Strengthened platform observability and reliability by integrating New Relic monitoring and performance tracking.",
+                "Improved security posture by integrating Prisma vulnerability scanning into CI/CD pipelines, reducing platform risk.",
+                "Collaborated with cross-functional product, platform, and engineering teams while driving architectural decisions, code quality, and operational excellence."
+            ],
+            "skills": [
+                "React",
+                "JavaScript",
+                "TypeScript",
+                "Frontend Architecture",
+                "Agile"
+            ]
+        },
+        {
+            "company": "Candylabs",
+            "logo": "/logos/candylabs.svg",
+            "role": "Software Engineer",
+            "period": "2017 — 2020",
+            "description": [
+                "Implemented CI/CD automation pipelines using CircleCI, Docker, Kubernetes, and Google Cloud Platform.",
+                "Developed and maintained full-stack web applications using React, Redux, Django, and GraphQL.",
+                "Built Slack bots and automation services using Firebase, Google Cloud Functions, and webhook integrations.",
+                "Designed and deployed serverless solutions, managed logging, and supported SEO optimization.",
+                "Delivered data analytics and visualization solutions using BigQuery and Google Data Studio."
+            ],
+            "skills": [
+                "Kubernetes",
+                "Docker",
+                "Google Cloud",
+                "React",
+                "GraphQL",
+                "Django",
+                "CI/CD",
+                "Data Analytics"
+            ]
+        },
+        {
+            "company": "Leapfrog Technology Inc.",
+            "logo": "/logos/leapfrog.svg",
+            "role": "Software Engineer",
+            "period": "2015 — 2016",
+            "description": [
+                "Led analysis, design, development, deployment, and maintenance of software solutions.",
+                "Wrote high-quality, modular, and reusable code following TDD principles and industry best practices.",
+                "Actively participated in code reviews, technical discussions, and knowledge sharing.",
+                "Evaluated and adopted new technologies to improve development efficiency and product quality."
+            ],
+            "skills": [
+                "Software Design",
+                "TDD",
+                "Code Review",
+                "Backend Development",
+                "Best Practices"
+            ]
+        },
+        {
+            "company": "Leapfrog Technology Inc.",
+            "logo": "/logos/leapfrog.svg",
+            "role": "Associate Software Engineer",
+            "period": "2014 — 2015",
+            "description": [
+                "Developed full-stack web applications using Ruby on Rails and modern frontend technologies.",
+                "Designed and implemented RESTful APIs and deployment scripts.",
+                "Deployed applications to Heroku, Engine Yard, and AWS EC2 environments.",
+                "Adhered to organizational coding standards, development processes, and best practices.",
+                "Communicated effectively with team members and clients on progress and technical issues."
+            ],
+            "skills": [
+                "Ruby on Rails",
+                "REST APIs",
+                "AWS EC2",
+                "Heroku",
+                "Full-Stack Development"
+            ]
+        },
+        {
+            "company": "Leapfrog Technology Inc.",
+            "logo": "/logos/leapfrog.svg",
+            "role": "Trainee",
+            "period": "2014",
+            "description": [
+                "Completed structured training in HTML5, CSS, and JavaScript under senior mentorship.",
+                "Applied pixel-perfect implementation techniques and W3C web standards.",
+                "Developed JavaScript-based mini-projects including interactive UI components and games."
+            ],
+            "skills": [
+                "HTML5",
+                "CSS",
+                "JavaScript",
+                "Frontend Fundamentals"
+            ]
+        }
+    ],
+    "skills": [
+        {
+            "name": "React / Next.js (App Router)",
+            "level": 95,
+            "category": "Frontend"
+        },
+        {
+            "name": "Modern JavaScript (ES2023+)",
+            "level": 95,
+            "category": "Frontend"
+        },
+        {
+            "name": "TypeScript (Strict Mode)",
+            "level": 92,
+            "category": "Frontend"
+        },
+        {
+            "name": "State Management (Redux Toolkit, React Query)",
+            "level": 90,
+            "category": "Frontend"
+        },
+        {
+            "name": "Web Standards (HTML5, CSS3, Accessibility)",
+            "level": 95,
+            "category": "Frontend"
+        },
+        {
+            "name": "Utility-First Styling (Tailwind CSS)",
+            "level": 98,
+            "category": "Frontend"
+        },
+        {
+            "name": "Node.js (API & BFF Layer)",
+            "level": 85,
+            "category": "Backend"
+        },
+        {
+            "name": "API Design (REST, OpenAPI)",
+            "level": 88,
+            "category": "Backend"
+        },
+        {
+            "name": "GraphQL (Schema-First)",
+            "level": 82,
+            "category": "Backend"
+        },
+        {
+            "name": "Relational Databases (PostgreSQL)",
+            "level": 82,
+            "category": "Backend"
+        },
+        {
+            "name": "Python Web Frameworks (Django)",
+            "level": 78,
+            "category": "Backend"
+        },
+        {
+            "name": "Ruby on Rails (Legacy & Maintenance)",
+            "level": 75,
+            "category": "Backend"
+        },
+        {
+            "name": "CI/CD Pipelines (CircleCI, GitHub Actions)",
+            "level": 88,
+            "category": "DevOps"
+        },
+        {
+            "name": "Containerization (Docker)",
+            "level": 88,
+            "category": "DevOps"
+        },
+        {
+            "name": "Container Orchestration (Kubernetes)",
+            "level": 82,
+            "category": "DevOps"
+        },
+        {
+            "name": "Cloud Platforms (AWS, Google Cloud)",
+            "level": 82,
+            "category": "Cloud"
+        },
+        {
+            "name": "Serverless Architecture (Cloud Functions)",
+            "level": 80,
+            "category": "Cloud"
+        },
+        {
+            "name": "Version Control & Collaboration (Git)",
+            "level": 95,
+            "category": "Tools"
+        },
+        {
+            "name": "Testing Strategy (TDD, Unit & Integration Tests)",
+            "level": 88,
+            "category": "Quality"
+        },
+        {
+            "name": "System Design & Scalability",
+            "level": 82,
+            "category": "Architecture"
+        }
+    ],
+    "projects": [
+        {
+            "title": "OnTarget Technology",
+            "description": "A construction project management platform that visualizes tasks through 3D models using the Autodesk API, delivering an augmented reality–like experience. Enabled teams to manage construction workflows more effectively by integrating spatial visualization with task tracking.",
+            "image": "placeholder",
+            "tech": [
+                "JavaScript",
+                "Autodesk API",
+                "3D Modeling",
+                "Web Applications"
+            ]
+        },
+        {
+            "title": "Solarwisely",
+            "description": "A full-stack web application that helps homeowners and small businesses determine optimal solar panel sizing based on roof structure and orientation. Implemented core algorithms, interactive UI, and scalable backend services to process and analyze data efficiently.",
+            "image": "placeholder",
+            "tech": [
+                "React",
+                "Node.js",
+                "NoSQL",
+                "Big Data"
+            ]
+        },
+        {
+            "title": "Vyaguta – ERP System",
+            "description": "An open-source ERP system designed to manage internal organizational resources and operations. Built a scalable frontend using React and Redux architecture and integrated it with a Java EE backend to support complex enterprise workflows.",
+            "image": "placeholder",
+            "tech": [
+                "React",
+                "Redux",
+                "Java EE",
+                "Enterprise Systems"
+            ]
+        }
+    ],
+    "universityProjects": [
+        {
+            "title": "Data Analytics of Irregular Sensor data",
+            "description": "Application of a decision tree classifier data in frequency domain, extracting features from data to classify and predict the data-set",
+            "tech": [
+                "Python",
+                "Numpy",
+                "Pandas",
+                "Scikit-learn"
+            ]
+        },
+        {
+            "title": "Convolution Neural Network Analysis",
+            "description": "Using Pyqt for camera interface and count the number of fingers displayed using CNN with help of tensor flow",
+            "tech": [
+                "Python",
+                "Pyqt",
+                "TensorFlow",
+                "OpenCV"
+            ]
+        }
+    ]
+}
