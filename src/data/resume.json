@@ -2,12 +2,12 @@
     "profile": {
         "name": "Anuj Joshi",
         "title": "Full Stack Developer",
-        "summary": "Passionate developer with 5+ years of experience building scalable web applications. Focused on creating beautiful, user-centric experiences.",
+        "summary": "Passionate developer with 10+ years of experience building scalable web applications. Focused on creating beautiful, user-centric experiences.",
         "image": "/logos/profile.jpg",
         "contact": {
-            "phone": "+1 (555) 123-4567",
-            "email": "anuj@example.com",
-            "location": "San Francisco, CA"
+            "phone": "",
+            "email": "joshi.anujo7@gmail.com",
+            "location": "Germany, Hessen"
         },
         "socials": [
             {
@@ -28,7 +28,7 @@
         {
             "company": "Deutsche Bank",
             "logo": "/logos/db.svg",
-            "role": "Software Engineer",
+            "role": "Senior Software Engineer",
             "period": "2020 — Present",
             "description": [
                 "Designed, developed, and maintained enterprise-scale frontend applications using React and modern JavaScript standards.",

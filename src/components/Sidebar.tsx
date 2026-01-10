@@ -1,4 +1,3 @@
-import React from 'react';
 import resumeData from '../data/resume.json';
 import { Profile } from './Profile';
 

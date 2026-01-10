@@ -1,13 +1,35 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/png" href="/favicon.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Anuj Resume | Modern Minimalist</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/png" href="/favicon.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home | Anuj Resume</title>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Anuj Joshi",
+      "url": "https://ajoshi.netlify.app/",
+      "email": "joshi.anujo7@gmail.com",
+      "jobTitle": "Senior Software Engineer",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Germany",
+        "addressRegion": "Hessen"
+      },
+      "sameAs": [
+        "https://github.com/joshianuj",
+        "https://www.linkedin.com/in/joshianujo7"
+      ]
+    }
+  </script>
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.tsx"></script>
+</body>
+
 </html>

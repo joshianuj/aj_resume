@@ -1,11 +1,11 @@
-import { motion } from 'framer-motion';
+import { motion, type Variants } from 'framer-motion';
 
 interface Skill {
     name: string;
     level: number;
 }
 
-const containerVariants = {
+const containerVariants: Variants = {
     hidden: { opacity: 0 },
     visible: {
         opacity: 1,
@@ -15,7 +15,7 @@ const containerVariants = {
     }
 };
 
-const itemVariants = {
+const itemVariants: Variants = {
     hidden: { opacity: 0, x: -20 },
     visible: {
         opacity: 1,
