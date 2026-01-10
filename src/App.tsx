@@ -1,4 +1,4 @@
-import Sidebar from './components/Sidebar';
+import { Profile } from './components/Profile';
 import { Menu, X } from 'lucide-react';
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
@@ -48,14 +48,14 @@ function App() {
         fixed inset-y-0 left-0 z-50 w-80 transform transition-transform duration-500 ease-in-out bg-[#5F4848]
         md:translate-x-0 ${isMobileMenuOpen ? 'translate-x-0' : '-translate-x-full'}
       `}>
-        <div className="h-full p-10">
-          <Sidebar />
+        <div className="h-full p-10 overflow-y-auto">
+          <Profile profile={profile} />
         </div>
       </div>
 
       {/* Main Content */}
-      <main className="cv-main relative overflow-x-hidden min-h-screen flex flex-col justify-start">
-        <div className="max-w-4xl mx-auto w-full space-y-20 py-16 px-6 md:px-0">
+      <main className="cv-main relative overflow-x-hidden min-h-screen">
+        <div className="max-w-4xl mx-auto w-full space-y-20 py-16 px-6">
           <Section title="Experience" delay={0.1}>
             <Experience items={experience} />
           </Section>

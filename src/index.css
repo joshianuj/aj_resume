@@ -29,11 +29,11 @@
 }
 
 .cv-sidebar {
-  @apply bg-sidebar text-white min-h-screen fixed left-0 top-0 w-80 p-8 hidden md:flex flex-col overflow-y-auto;
+  @apply bg-sidebar text-white p-8 flex flex-col overflow-y-auto w-full md:w-80 md:min-h-screen md:fixed md:left-0 md:top-0;
 }
 
 .cv-main {
-  @apply md:ml-80 p-12 min-h-screen bg-white;
+  @apply md:ml-80 p-6 md:p-12 min-h-screen bg-white;
 }
 
 .cv-card {

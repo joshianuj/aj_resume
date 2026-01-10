@@ -33,7 +33,7 @@
             "description": [
                 "Designed, developed, and maintained enterprise-scale frontend applications using React and modern JavaScript standards.",
                 "Led and contributed to cloud modernization initiatives, including Google Kubernetes Engine (GKE) infrastructure creation and OpenShift (OCP 4) migration.",
-                "Established and maintained CI/CD standards using GitHub Actions, enabling one-touch and scheduled workflows across approximately 40 microservices.",
+                "Established and maintained CI/CD standards using GitHub Actions, enabling one-touch and scheduled workflows across microservices.",
                 "Strengthened platform observability and reliability by integrating New Relic monitoring and performance tracking.",
                 "Improved security posture by integrating Prisma vulnerability scanning into CI/CD pipelines, reducing platform risk.",
                 "Collaborated with cross-functional product, platform, and engineering teams while driving architectural decisions, code quality, and operational excellence."
