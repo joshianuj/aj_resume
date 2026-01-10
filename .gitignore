@@ -16,7 +16,8 @@
 # gatsby files
 node_modules/
 .cache/
-public
+# public Folder should not be ignored for Vite projects
+# public
 src/gatsby-types.d.ts
 dist
 
