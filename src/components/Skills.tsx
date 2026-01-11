@@ -1,73 +1,67 @@
 import { motion, type Variants } from 'framer-motion';
 
-interface Skill {
-    name: string;
-    level: number;
-}
-
 const containerVariants: Variants = {
     hidden: { opacity: 0 },
     visible: {
         opacity: 1,
         transition: {
-            staggerChildren: 0.05
+            staggerChildren: 0.1
         }
     }
 };
 
 const itemVariants: Variants = {
-    hidden: { opacity: 0, x: -20 },
+    hidden: { opacity: 0, y: 10 },
     visible: {
         opacity: 1,
-        x: 0,
+        y: 0,
         transition: {
-            duration: 0.5,
+            duration: 0.4,
             ease: "easeOut"
         }
     }
 };
 
-export const SkillBar = ({ name, level }: { name: string; level: number }) => (
-    <motion.div variants={itemVariants} className="space-y-2">
-        <div className="flex justify-between text-[13px] font-sans font-bold text-gray-700 tracking-tight">
-            <span>{name}</span>
-            <span className="text-blue-600">{level}%</span>
-        </div>
-        <div className="h-1.5 bg-gray-100 rounded-full overflow-hidden">
-            <motion.div
-                initial={{ width: 0 }}
-                whileInView={{ width: `${level}%` }}
-                viewport={{ once: true }}
-                transition={{ duration: 1, ease: "easeOut" }}
-                className="h-full bg-[#1E88E5] rounded-full"
-            />
-        </div>
-    </motion.div>
-);
-
-export const Skills = ({ items }: { items: Skill[] }) => {
-    const half = Math.ceil(items.length / 2);
-    const leftCol = items.slice(0, half);
-    const rightCol = items.slice(half);
+export const Skills = ({ items }: { items: Record<string, string[]> }) => {
+    // Helper to format category keys (e.g. "cloud_devops" -> "Cloud Devops")
+    const formatCategory = (key: string) => {
+        return key
+            .split('_')
+            .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+            .join(' ')
+            .replace('Devops', 'DevOps') // Specific fix for DevOps
+            .replace('Api', 'API');      // Specific fix for API
+    };
 
     return (
         <motion.div
             variants={containerVariants}
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: true, margin: "-100px" }}
-            className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-6"
+            viewport={{ once: true, margin: "-50px" }}
+            className="grid grid-cols-1 md:grid-cols-2 gap-6"
         >
-            <div className="space-y-5">
-                {leftCol.map((skill) => (
-                    <SkillBar key={skill.name} {...skill} />
-                ))}
-            </div>
-            <div className="space-y-5">
-                {rightCol.map((skill) => (
-                    <SkillBar key={skill.name} {...skill} />
-                ))}
-            </div>
+            {Object.entries(items).map(([category, skills]) => (
+                <motion.div
+                    key={category}
+                    variants={itemVariants}
+                    className="bg-gray-50/80 rounded-2xl p-6 border border-gray-100 hover:border-gray-200 transition-colors"
+                >
+                    <h3 className="text-sm font-bold uppercase tracking-wider text-gray-500 mb-4">
+                        {formatCategory(category)}
+                    </h3>
+                    <div className="flex flex-wrap gap-2">
+                        {skills.map((skill) => (
+                            <span
+                                key={skill}
+                                className="bg-white text-gray-800 text-[13px] font-medium px-3 py-1.5 rounded-lg border border-gray-200/60 shadow-sm"
+                            >
+                                {skill}
+                            </span>
+                        ))}
+                    </div>
+                </motion.div>
+            ))}
         </motion.div>
     );
 };

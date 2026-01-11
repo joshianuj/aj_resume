@@ -9,7 +9,7 @@ import { Projects } from './components/Projects';
 
 function App() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const { profile, experience, skills, projects, universityProjects } = resumeData;
+  const { profile, experience, skills, projects, individualProjects } = resumeData;
 
   return (
     <div className="relative min-h-screen bg-white">
@@ -68,9 +68,9 @@ function App() {
             <Projects items={projects} />
           </Section>
 
-          {universityProjects && (
-            <Section title="University Projects" delay={0.4}>
-              <Projects items={universityProjects} isUniversity={true} />
+          {individualProjects && (
+            <Section title="Individual Projects" delay={0.4}>
+              <Projects items={individualProjects} isUniversity={true} />
             </Section>
           )}
         </div>

@@ -31,18 +31,20 @@
             "role": "Senior Software Engineer",
             "period": "2020 — Present",
             "description": [
-                "Designed, developed, and maintained enterprise-scale frontend applications using React and modern JavaScript standards.",
-                "Led and contributed to cloud modernization initiatives, including Google Kubernetes Engine (GKE) infrastructure creation and OpenShift (OCP 4) migration.",
-                "Established and maintained CI/CD standards using GitHub Actions, enabling one-touch and scheduled workflows across microservices.",
-                "Strengthened platform observability and reliability by integrating New Relic monitoring and performance tracking.",
-                "Improved security posture by integrating Prisma vulnerability scanning into CI/CD pipelines, reducing platform risk.",
-                "Collaborated with cross-functional product, platform, and engineering teams while driving architectural decisions, code quality, and operational excellence."
+                "Designed, developed, and maintained enterprise-scale frontend applications using React, TypeScript, and modern JavaScript standards.",
+                "Led cloud modernization initiatives including Google Kubernetes Engine (GKE) infrastructure setup and OpenShift (OCP 4) migration.",
+                "Defined and implemented CI/CD standards using GitHub Actions, enabling one-touch and scheduled deployments across microservices.",
+                "Improved platform observability and reliability by integrating New Relic monitoring and performance analytics.",
+                "Strengthened security posture by integrating Prisma vulnerability scanning into CI/CD pipelines, reducing platform risk and improving compliance.",
+                "Collaborated closely with product, platform, and engineering teams, contributing to architectural decisions, code quality, and operational excellence."
             ],
             "skills": [
                 "React",
-                "JavaScript",
                 "TypeScript",
                 "Frontend Architecture",
+                "Kubernetes",
+                "CI/CD",
+                "Cloud Platforms",
                 "Agile"
             ]
         },
@@ -52,19 +54,19 @@
             "role": "Software Engineer",
             "period": "2017 — 2020",
             "description": [
-                "Implemented CI/CD automation pipelines using CircleCI, Docker, Kubernetes, and Google Cloud Platform.",
+                "Designed and implemented CI/CD automation pipelines using CircleCI, Docker, Kubernetes, and Google Cloud Platform.",
                 "Developed and maintained full-stack web applications using React, Redux, Django, and GraphQL.",
                 "Built Slack bots and automation services using Firebase, Google Cloud Functions, and webhook integrations.",
-                "Designed and deployed serverless solutions, managed logging, and supported SEO optimization.",
-                "Delivered data analytics and visualization solutions using BigQuery and Google Data Studio."
+                "Designed and deployed serverless solutions, managed centralized logging, and supported SEO optimization initiatives.",
+                "Delivered data analytics and visualization solutions using BigQuery and Google Data Studio to support business insights."
             ],
             "skills": [
-                "Kubernetes",
-                "Docker",
-                "Google Cloud",
                 "React",
                 "GraphQL",
                 "Django",
+                "Kubernetes",
+                "Docker",
+                "Google Cloud",
                 "CI/CD",
                 "Data Analytics"
             ]
@@ -75,16 +77,16 @@
             "role": "Software Engineer",
             "period": "2015 — 2016",
             "description": [
-                "Led analysis, design, development, deployment, and maintenance of software solutions.",
+                "Owned end-to-end development lifecycle including analysis, design, implementation, deployment, and maintenance of production systems.",
                 "Wrote high-quality, modular, and reusable code following TDD principles and industry best practices.",
-                "Actively participated in code reviews, technical discussions, and knowledge sharing.",
-                "Evaluated and adopted new technologies to improve development efficiency and product quality."
+                "Actively participated in code reviews, architectural discussions, and internal knowledge-sharing initiatives.",
+                "Evaluated and introduced new technologies to improve development efficiency and product quality."
             ],
             "skills": [
                 "Software Design",
                 "TDD",
-                "Code Review",
                 "Backend Development",
+                "Code Review",
                 "Best Practices"
             ]
         },
@@ -95,10 +97,9 @@
             "period": "2014 — 2015",
             "description": [
                 "Developed full-stack web applications using Ruby on Rails and modern frontend technologies.",
-                "Designed and implemented RESTful APIs and deployment scripts.",
-                "Deployed applications to Heroku, Engine Yard, and AWS EC2 environments.",
-                "Adhered to organizational coding standards, development processes, and best practices.",
-                "Communicated effectively with team members and clients on progress and technical issues."
+                "Designed and implemented RESTful APIs and deployment workflows.",
+                "Deployed and maintained applications on Heroku, Engine Yard, and AWS EC2.",
+                "Followed organizational coding standards, development processes, and delivery best practices."
             ],
             "skills": [
                 "Ruby on Rails",
@@ -116,7 +117,7 @@
             "description": [
                 "Completed structured training in HTML5, CSS, and JavaScript under senior mentorship.",
                 "Applied pixel-perfect implementation techniques and W3C web standards.",
-                "Developed JavaScript-based mini-projects including interactive UI components and games."
+                "Built JavaScript-based mini-projects including interactive UI components and simple games."
             ],
             "skills": [
                 "HTML5",
@@ -126,108 +127,51 @@
             ]
         }
     ],
-    "skills": [
-        {
-            "name": "React / Next.js (App Router)",
-            "level": 95,
-            "category": "Frontend"
-        },
-        {
-            "name": "Modern JavaScript (ES2023+)",
-            "level": 95,
-            "category": "Frontend"
-        },
-        {
-            "name": "TypeScript (Strict Mode)",
-            "level": 92,
-            "category": "Frontend"
-        },
-        {
-            "name": "State Management (Redux Toolkit, React Query)",
-            "level": 90,
-            "category": "Frontend"
-        },
-        {
-            "name": "Web Standards (HTML5, CSS3, Accessibility)",
-            "level": 95,
-            "category": "Frontend"
-        },
-        {
-            "name": "Utility-First Styling (Tailwind CSS)",
-            "level": 98,
-            "category": "Frontend"
-        },
-        {
-            "name": "Node.js (API & BFF Layer)",
-            "level": 85,
-            "category": "Backend"
-        },
-        {
-            "name": "API Design (REST, OpenAPI)",
-            "level": 88,
-            "category": "Backend"
-        },
-        {
-            "name": "GraphQL (Schema-First)",
-            "level": 82,
-            "category": "Backend"
-        },
-        {
-            "name": "Relational Databases (PostgreSQL)",
-            "level": 82,
-            "category": "Backend"
-        },
-        {
-            "name": "Python Web Frameworks (Django)",
-            "level": 78,
-            "category": "Backend"
-        },
-        {
-            "name": "Ruby on Rails (Legacy & Maintenance)",
-            "level": 75,
-            "category": "Backend"
-        },
-        {
-            "name": "CI/CD Pipelines (CircleCI, GitHub Actions)",
-            "level": 88,
-            "category": "DevOps"
-        },
-        {
-            "name": "Containerization (Docker)",
-            "level": 88,
-            "category": "DevOps"
-        },
-        {
-            "name": "Container Orchestration (Kubernetes)",
-            "level": 82,
-            "category": "DevOps"
-        },
-        {
-            "name": "Cloud Platforms (AWS, Google Cloud)",
-            "level": 82,
-            "category": "Cloud"
-        },
-        {
-            "name": "Serverless Architecture (Cloud Functions)",
-            "level": 80,
-            "category": "Cloud"
-        },
-        {
-            "name": "Version Control & Collaboration (Git)",
-            "level": 95,
-            "category": "Tools"
-        },
-        {
-            "name": "Testing Strategy (TDD, Unit & Integration Tests)",
-            "level": 88,
-            "category": "Quality"
-        },
-        {
-            "name": "System Design & Scalability",
-            "level": 82,
-            "category": "Architecture"
-        }
-    ],
+    "skills": {
+        "frontend": [
+            "React",
+            "Next.js (App Router)",
+            "TypeScript (Strict Mode)",
+            "Modern JavaScript (ES2023+)",
+            "Redux Toolkit",
+            "React Query",
+            "HTML5",
+            "CSS3",
+            "Accessibility (WCAG)",
+            "Tailwind CSS"
+        ],
+        "backend": [
+            "Node.js",
+            "REST APIs",
+            "OpenAPI",
+            "GraphQL (Schema-first)",
+            "PostgreSQL",
+            "Python (Django)",
+            "Ruby on Rails"
+        ],
+        "cloud_devops": [
+            "AWS",
+            "Google Cloud",
+            "Serverless Architecture",
+            "Docker",
+            "Kubernetes",
+            "GitHub Actions",
+            "CircleCI"
+        ],
+        "architecture_quality": [
+            "System Design",
+            "Scalability",
+            "Test-Driven Development (TDD)",
+            "Unit Testing",
+            "Integration Testing"
+        ],
+        "tools_collaboration": [
+            "Git",
+            "GitHub",
+            "Agile Development",
+            "Cross-functional Collaboration"
+        ]
+    },
     "projects": [
         {
             "title": "OnTarget Technology",
@@ -263,23 +207,32 @@
             ]
         }
     ],
-    "universityProjects": [
+    "individualProjects": [
         {
-            "title": "Data Analytics of Irregular Sensor data",
-            "description": "Application of a decision tree classifier data in frequency domain, extracting features from data to classify and predict the data-set",
+            "title": "Real-time Multiplayer Game (Pew Pew)",
+            "description": "Hackathon-winning real-time multiplayer game featuring low-latency player synchronization and fast-paced gameplay mechanics, developed under time constraints.",
+            "tech": [
+                "JavaScript",
+                "WebSockets"
+            ],
+            "achievement": "Winner – React Riot Hackathon"
+        },
+        {
+            "title": "Data Analytics of Irregular Sensor Data",
+            "description": "Applied decision tree classifiers to frequency-domain sensor data, extracting features to classify and predict irregular datasets.",
             "tech": [
                 "Python",
-                "Numpy",
+                "NumPy",
                 "Pandas",
                 "Scikit-learn"
             ]
         },
         {
             "title": "Convolution Neural Network Analysis",
-            "description": "Using Pyqt for camera interface and count the number of fingers displayed using CNN with help of tensor flow",
+            "description": "Built a real-time camera interface using PyQt and implemented a convolutional neural network to detect and count fingers using image data.",
             "tech": [
                 "Python",
-                "Pyqt",
+                "PyQt",
                 "TensorFlow",
                 "OpenCV"
             ]

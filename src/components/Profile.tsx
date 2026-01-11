@@ -41,7 +41,7 @@ export const Profile = ({ profile }: { profile: ProfileData }) => {
                 <div className="w-40 h-40 rounded-full overflow-hidden mb-6 border-2 border-white/10">
                     <img
                         src={profile.image}
-                        alt={profile.name}
+                        alt={`Professional photo of ${profile.name} - ${profile.title}`}
                         className="w-full h-full object-cover"
                     />
                 </div>
