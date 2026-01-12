@@ -61,7 +61,7 @@ export const Profile = ({ profile }: { profile: ProfileData }) => {
 
                 {/* CV Download / Action */}
                 <a
-                    href="/my_resume.pdf"
+                    href="/cv.pdf"
                     className="flex items-center space-x-2 text-white/90 hover:text-white font-sans text-sm uppercase tracking-widest border border-white/20 px-4 py-2 rounded transition-all hover:bg-white/5 w-fit mx-auto"
                 >
                     <Download size={16} />
