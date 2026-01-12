@@ -24,12 +24,12 @@
 \definecolor{rulegray}{HTML}{D6D6D6}
 
 % ---- Global vertical rhythm ----
-\newcommand{\sectionbefore}{8pt}
+\newcommand{\sectionbefore}{6pt}
 \newcommand{\sectionafter}{6pt}
 \newcommand{\blocksep}{6pt}
 \newcommand{\linesep}{3pt}
-\newcommand{\headerblocksep}{4pt}
-\newcommand{\projectsep}{6pt}
+\newcommand{\headerblocksep}{3pt}
+\newcommand{\projectsep}{5pt}
 
 % ---- Section hierarchy (section + section*) ----
 \titleformat{name=\section}
@@ -85,7 +85,7 @@
 \begin{document}
 
 % ================= HEADER =================
-{\huge \textbf{Anuj Joshi}}\par
+{\LARGE \textbf{Anuj Joshi}}\par
 \vspace{2pt}
 {\large \textbf{Senior Software Engineer \,|\, Full-Stack Developer}}\par
 \headerrule
@@ -111,7 +111,6 @@ A cross-functional collaborator with a strong focus on scalable architecture and
 
 % ================= EXPERIENCE =================
 \section*{Experience}
-
 \jobheading{Deutsche Bank}{2020 -- Present}{Senior Software Engineer - Trade Finance and Lending}{Frankfurt, Germany}
 \begin{jobitems}
   \item Built and maintained enterprise-scale front-end applications using React, TypeScript, and modern JavaScript.
@@ -143,27 +142,42 @@ A cross-functional collaborator with a strong focus on scalable architecture and
 {Built a real-time multiplayer game with low-latency player synchronisation. \textit{(JavaScript, WebSockets)}}
 
 \vspace{\projectsep}
-\project{Data Analytics of Irregular Sensor Data}
-{Applied decision-tree classification to frequency-domain sensor data, including feature extraction and predictive modelling. \textit{(Python, NumPy, Pandas, scikit-learn)}}
+\project{Comparison of Different Machine
+Learning Algorithms for Ultrasonic
+Classification for Advanced Driving
+Assistance Systems (ADAS) \hfill \textit{Master Thesis}}
+{Built and systematically evaluated an ultrasonic object classification pipeline using a Raspberry Pi platform, FFT-based feature extraction, and a comparative analysis of multiple machine-learning classification models for ADAS applications. 
+\textit{(Python, PyQt, TensorFlow, OpenCV)}}
 
 \vspace{\projectsep}
-\project{CNN-Based Finger Detection}
-{Developed a real-time camera interface for finger counting using convolutional neural networks. \textit{(Python, PyQt, TensorFlow, OpenCV)}}
+\project{Data Analytics of Irregular Sensor Data}
+{Applied multiple classification models to cleaned frequency-domain sensor data, including feature extraction and predictive modeling.
+\textit{(Python, NumPy, Pandas, scikit-learn)}}
 
 % ================= EDUCATION =================
+% Education entry (project-style, compact)
+\newcommand{\education}[4]{%
+  \textbf{#1}\hfill #2\par
+  {\itshape #3}\par
+  {\small #4}\par
+}
 
 \section*{Education}
 
-\textbf{M.Eng. in Information Technology} \hfill 2016 -- 2018\\
-Frankfurt University of Applied Sciences, Frankfurt, Germany\\
-\textit{Key Modules:} Distributed Systems \textbar\ Autonomous Intelligent Systems \textbar\
-Computational Intelligence \textbar\ Mobile Computing \textbar\ Stochastic Signals \textbar\ Computer Networks
+\education
+{M.Eng. in Information Technology}
+{2016 -- 2018}
+{Frankfurt University of Applied Sciences, Frankfurt, Germany}
+{\textit{Key Modules:} Distributed Systems \textbar\ Autonomous Intelligent Systems \textbar\
+Computational Intelligence \textbar\ Mobile Computing \textbar\
+Stochastic Signals \textbar\ Computer Networks}
 
 \vspace{4pt}
-\textbf{B.E. in Computer Engineering} \hfill 2011 -- 2015\\
-Kantipur Engineering College, Tribhuvan University, Kathmandu, Nepal\\
-\textit{Key Modules:} Data Structures \& Algorithms \textbar\ Distributed Systems \textbar\
-Artificial Intelligence \textbar\ Big Data Systems
-
+\education
+{B.E. in Computer Engineering}
+{2011 -- 2015}
+{Kantipur Engineering College, Tribhuvan University, Kathmandu, Nepal}
+{\textit{Key Modules:} Data Structures \& Algorithms \textbar\ Distributed Systems \textbar\
+Artificial Intelligence \textbar\ Big Data Systems}
 
 \end{document}
