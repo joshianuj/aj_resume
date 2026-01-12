@@ -1,0 +1,169 @@
+% Anuj Joshi — 1-page Resume (tight spacing, clear hierarchy)
+% Compile with pdfLaTeX.
+
+\documentclass[10pt,a4paper]{article}
+
+% ---- Page ----
+\usepackage[a4paper,margin=1.2cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage[hidelinks]{hyperref}
+
+% ---- Styling ----
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{titlesec}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+
+% Thin divider colour
+\definecolor{rulegray}{HTML}{D6D6D6}
+
+% ---- Global vertical rhythm ----
+\newcommand{\sectionbefore}{8pt}
+\newcommand{\sectionafter}{6pt}
+\newcommand{\blocksep}{6pt}
+\newcommand{\linesep}{3pt}
+\newcommand{\headerblocksep}{4pt}
+\newcommand{\projectsep}{6pt}
+
+% ---- Section hierarchy (section + section*) ----
+\titleformat{name=\section}
+  {\bfseries\large}
+  {}
+  {0pt}
+  {}
+  [\vspace{2pt}{\color{rulegray}\hrule}]
+
+\titleformat{name=\section,numberless}
+  {\bfseries\large}
+  {}
+  {0pt}
+  {}
+  [\vspace{2pt}{\color{rulegray}\hrule}]
+
+\titlespacing*{name=\section}{0pt}{\sectionbefore}{\sectionafter}
+\titlespacing*{name=\section,numberless}{-pt}{\sectionbefore}{\sectionafter}
+
+% ---- Lists ----
+\setlist[itemize]{
+  leftmargin=*,
+  itemsep=2pt,
+  topsep=2pt,
+  parsep=0pt,
+  partopsep=0pt
+}
+
+\newenvironment{jobitems}
+  {\begin{itemize}[topsep=1pt]}
+  {\end{itemize}}
+
+% ---- Helpers ----
+\newcommand{\contactsep}{\;\textbar\;}
+
+\newcommand{\jobheading}[4]{%
+  \textbf{#1}\hfill \textbf{#2}\par
+  \textit{#3}\hfill \textit{#4}\par
+}
+
+\newcommand{\tightlinebreak}{\par\vspace{\linesep}}
+
+\newcommand{\project}[2]{%
+  \textbf{#1}\par
+  #2\par
+}
+
+% Header divider (identical to section headers, colour scoped)
+\newcommand{\headerrule}{%
+  \vspace{1pt}{\color{rulegray}\hrule}\vspace{\headerblocksep}
+}
+
+\begin{document}
+
+% ================= HEADER =================
+{\huge \textbf{Anuj Joshi}}\par
+\vspace{2pt}
+{\large \textbf{Senior Software Engineer \,|\, Full-Stack Developer}}\par
+\headerrule
+Frankfurt am Main, Germany
+\contactsep \href{mailto:joshi.anujo7@gmail.com}{joshi.anujo7@gmail.com}
+\contactsep +49 176 4578 2221\par
+\href{https://ajoshi.netlify.app/}{ajoshi.netlify.app}
+\contactsep \href{https://github.com/joshianuj}{github.com/joshianuj}
+\contactsep \href{https://linkedin.com/in/joshianujo7}{linkedin.com/in/joshianujo7}
+
+% ================= SUMMARY =================
+\section*{Summary}
+Senior Software Engineer with over 10 years of experience delivering enterprise-scale web applications.
+Specialised in React and TypeScript front-end engineering, cloud platforms, CI/CD automation, and reliability practices.
+A cross-functional collaborator with a strong focus on scalable architecture and operational excellence.
+
+% ================= SKILLS =================
+\section*{Technical Skills}
+\textbf{Front End:} React, Next.js (App Router), TypeScript (strict), Modern JavaScript, HTML5, CSS3, Accessibility (WCAG), Tailwind CSS\tightlinebreak
+\textbf{Back End:} Node.js, REST APIs, OpenAPI, GraphQL (schema-first), PostgreSQL, Python (Django), Ruby on Rails\tightlinebreak
+\textbf{Cloud \& DevOps:} Google Cloud, AWS, Docker, Kubernetes, CI/CD (GitHub Actions, CircleCI), Serverless (Cloud Functions)\tightlinebreak
+\textbf{Quality \& Architecture:} System design, scalability, TDD, unit and integration testing, observability (New Relic)
+
+% ================= EXPERIENCE =================
+\section*{Experience}
+
+\jobheading{Deutsche Bank}{2020 -- Present}{Senior Software Engineer}{Frankfurt, Germany}
+\begin{jobitems}
+  \item Built and maintained enterprise-scale front-end applications using React, TypeScript, and modern JavaScript.
+  \item Led cloud modernisation initiatives, including GKE infrastructure setup and OpenShift (OCP 4) migration.
+  \item Standardised CI/CD pipelines using GitHub Actions for one-click and scheduled deployments across microservices.
+  \item Improved system reliability through New Relic monitoring and integrated Prisma scanning into CI/CD to enhance security.
+\end{jobitems}
+
+\vspace{\blocksep}
+\jobheading{Candylabs}{2017 -- 2020}{Software Engineer}{Frankfurt, Germany}
+\begin{jobitems}
+  \item Delivered full-stack web applications using React, Redux, Django, and GraphQL.
+  \item Built CI/CD pipelines with CircleCI, Docker, Kubernetes, and Google Cloud Platform.
+  \item Developed automation services, including Slack bots, using Firebase, Cloud Functions, and webhook integrations.
+  \item Produced analytics dashboards using BigQuery and Google Data Studio.
+\end{jobitems}
+
+\vspace{\blocksep}
+\jobheading{Leapfrog Technology Inc.}{2014 -- 2016}{Associate Software Engineer $\rightarrow$ Software Engineer}{Kathmandu, Nepal}
+\begin{jobitems}
+  \item Owned end-to-end delivery across design, development, deployment, and maintenance of production systems.
+  \item Developed Ruby on Rails applications and REST APIs, improving code quality through TDD and structured code reviews.
+\end{jobitems}
+
+% ================= PROJECTS =================
+\section*{Selected Projects}
+
+\project{Real-Time Multiplayer Game (Pew Pew) \hfill \textit{Winner, React Riot Hackathon}}
+{Built a real-time multiplayer game with low-latency player synchronisation. \textit{(JavaScript, WebSockets)}}
+
+\vspace{\projectsep}
+\project{Data Analytics of Irregular Sensor Data}
+{Applied decision-tree classification to frequency-domain sensor data, including feature extraction and predictive modelling. \textit{(Python, NumPy, Pandas, scikit-learn)}}
+
+\vspace{\projectsep}
+\project{CNN-Based Finger Detection}
+{Developed a real-time camera interface for finger counting using convolutional neural networks. \textit{(Python, PyQt, TensorFlow, OpenCV)}}
+
+% ================= EDUCATION =================
+
+\section*{Education}
+
+\textbf{M.Eng. in Information Technology} \hfill 2016 -- 2018\\
+Frankfurt University of Applied Sciences, Frankfurt, Germany\\
+\textit{Key Modules:} Distributed Systems \textbar\ Autonomous Intelligent Systems \textbar\
+Computational Intelligence \textbar\ Mobile Computing \textbar\ Stochastic Signals \textbar\ Computer Networks
+
+\vspace{4pt}
+\textbf{B.E. in Computer Engineering} \hfill 2011 -- 2015\\
+Kantipur Engineering College, Tribhuvan University, Kathmandu, Nepal\\
+\textit{Key Modules:} Data Structures \& Algorithms \textbar\ Distributed Systems \textbar\
+Artificial Intelligence \textbar\ Big Data Systems
+
+
+\end{document}
