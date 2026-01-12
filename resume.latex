@@ -112,7 +112,7 @@ A cross-functional collaborator with a strong focus on scalable architecture and
 % ================= EXPERIENCE =================
 \section*{Experience}
 
-\jobheading{Deutsche Bank}{2020 -- Present}{Senior Software Engineer}{Frankfurt, Germany}
+\jobheading{Deutsche Bank}{2020 -- Present}{Senior Software Engineer - Trade Finance and Lending}{Frankfurt, Germany}
 \begin{jobitems}
   \item Built and maintained enterprise-scale front-end applications using React, TypeScript, and modern JavaScript.
   \item Led cloud modernisation initiatives, including GKE infrastructure setup and OpenShift (OCP 4) migration.
